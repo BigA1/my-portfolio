@@ -1,5 +1,5 @@
 // src/pages/Home.js
-import { Box, Heading, Text, Button } from "@chakra-ui/react";
+import { Box, Spacer, Text, Button, Image } from "@chakra-ui/react";
 
 const Home = () => {
   return (
@@ -10,20 +10,23 @@ const Home = () => {
       flexDirection="column"
       justifyContent="center"
       alignItems="center"
-      bgGradient="linear(to-r, teal.400, blue.500)"
+      bgGradient="linear(to-r, brand.500, brand.100)"
       color="white"
       textAlign="center"
     >
-      <Heading as="h1" size="2xl" mb={4}>
-        Hi, I'm Alan Hamson
-      </Heading>
+      <Image
+        src="/assets/images/TallandTechy.png"
+        alt="Tall and Techy Logo"
+        boxSize="300px"
+        objectFit="contain"
+      />
       <Text fontSize="xl" mb={6}>
-        A software developer passionate about building modern web applications.
+        Full-stack developer with a passion for tech.
       </Text>
       <Button
         size="lg"
-        colorScheme="teal"
-        onClick={() => (window.location.href = "#projects")}
+        colorScheme="brand"
+        onClick={() => (window.location.href = "/projects")}
       >
         View My Projects
       </Button>

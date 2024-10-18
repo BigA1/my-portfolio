@@ -1,9 +1,8 @@
-// src/components/Footer.js
 import { Box, Text, Flex, Link } from "@chakra-ui/react";
 
 const Footer = () => {
   return (
-    <Box as="footer" bg="teal.500" color="white" p={4}>
+    <Box as="footer" bg="brand.500" color="white" p={4}>
       <Flex maxW="1200px" mx="auto" align="center" justify="space-between">
         <Text>
           &copy; {new Date().getFullYear()} Alan Hamson. All rights reserved.
